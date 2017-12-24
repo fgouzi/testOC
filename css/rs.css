@@ -1,0 +1,105 @@
+.aside .contact-form .error .label label { color: #800000; }
+
+#sidebar .box.contact-box p {
+    margin-bottom:5px;
+}
+
+#sidebar .box.contact-box h2 {
+    margin-bottom:0px;
+}
+
+ul.contact-emails {
+    list-style-image: url('../images/bullet01.gif');
+    list-style-position:outside;
+    margin:0px;
+    margin-top:10px;
+    padding:0px;
+}
+
+ul.contact-emails li a {
+    color: #80AE1B;
+    vertical-align: top;
+    line-height: 12px;
+}
+
+ul.contact-emails li .role {
+    color: #80AE1B;
+    color: #817E78;
+    float:right;
+    line-height: 12px;
+    font-size: 10px;
+}
+
+.contact-form .row .text input.error,  .contact-form .row-textarea .textarea textarea.error{
+    border: 1px solid #800000;
+}
+
+span.error {
+    color: #800000;
+}
+
+.image-box .info {
+    padding-top:5px;
+}
+.navigation {
+    padding-right: 0;
+}
+
+.gallery-content ul a {
+    text-decoration: none;
+}
+
+.date-list {
+    padding-left: 0;
+}
+
+.date-list a {
+    margin-right: 10px;
+}
+
+#sidebar .box .item-list .active A { 
+    font-weight: bold; 
+    color: #56AE03;
+}
+#sidebar .box .item-list LI {
+    padding-left: 0;
+}
+
+.table-info .prise {
+    font-family: HelveticaNeueBold;
+    font-size: 13px;
+}
+
+.table-heading th {
+    font-size: 11px;
+}
+
+.contact-form .row .text input {
+    font:12px Helvetica, Arial, sans-serif;
+
+}
+
+.item:hover,
+.item:hover .item-info span{color:#4b7f18;}
+.item .item-info .tooltip { font-size: 10px; }
+.item .item-info span.shipping { font-size: 12px;}
+.item:hover .item-info .tooltip { color: #ceba4a;}
+
+#footer strong span {
+    padding-right: 12px;
+    padding-left: 10px;
+}
+
+.box .image {
+    margin-bottom: 7px;
+}
+
+.page-confirmation .image-box { margin: 0 auto; }
+.page-confirmation .intro P { font-family: Helvetica, Arial, sans-serif; }
+
+.aside .contact-form .row .label label { font-size: 11px; }
+
+/* remove dotted outline FF/IE8 */
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+

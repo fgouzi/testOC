@@ -1,0 +1,54 @@
+/* Styles for the entire LavaLamp menu */
+        .lavaLampWithImage {
+            position: absolute;
+            height: 25px;/*66*/
+			text-align: center;
+			align: center;
+            padding: 5px 20px 5px 20px;
+            overflow: hidden;
+			/*margin: auto auto auto auto; */
+        }/*            background: url("../images/bg2.gif") no-repeat top;*/
+		/*margin: auto 5% auto 5%; 10px 1ère val et 0 2ème val*/
+		
+		    /* Force the list to flow horizontally */
+                .lavaLampWithImage li {
+                    float: left;
+                    list-style: none;
+                }
+				 /* Represents the background of the highlighted menu-item. */
+                    .lavaLampWithImage li.back {
+                        background: url("../images/lava2.gif") no-repeat; /* right -20px*/
+                        height: 45px;
+                        z-index: 1;
+						align: center;
+						padding: 0px 20px 0px 20px;
+						margin: auto 5% auto 6%;
+                        position: absolute;
+                    }
+                        .lavaLampWithImage li.back .left {
+                            background: url("../lava2.gif") no-repeat top; /* left*/
+                            height: 25px;
+                            /*margin: auto auto;  margin-right: 9px; /* 7px is the width of the rounded shape */
+                        }
+					/* Styles for each menu-item. */
+/*calc 1*/          .lavaLampWithImage li a {    					 
+                        font: 14px Calibri; /*bold*/
+                        text-decoration: none;
+                        color: #3C1E00;
+                        outline: none;
+                        text-align: center;
+						align: center;
+                        top: 5px;
+                        letter-spacing: 0;
+                        z-index: 10;
+                        display: block;
+                        float: left;
+                        height: 25px;
+                        position: relative;
+                        overflow: hidden;
+						padding: 5px 20px 5px 20px; 
+						/*margin: auto auto;    10px pur la 2ème val*/ 
+                    }
+                        .lavaLampWithImage li a:hover, .lavaLampWithImage li a:active, .lavaLampWithImage li a:visited {
+                            border: none;
+                        }

@@ -1,0 +1,251 @@
+/* CSS Document */
+body {	margin:0;			/* (anthracite) */
+		padding:0;
+		bccolor: #333333;
+		background: url("../images/v2/FondArbres.jpg") no-repeat center center fixed;
+		background-size: cover;}
+		
+.titreCorp { font: 20px Arial;
+			color: #76B720;} /* titre de thème 	(vert 20pt)#76B720 */
+			
+.textCorp { font: 16px Arial;
+			color: #333333;} /* text normal 	(anthracite 16pt) */
+			
+.textPied { font: 11px Arial; 
+			color: #FFFFFF;} /* adresse & co	(blanc 11pt)*/
+
+#navigation {
+  margin: 0 ;
+  padding: 0 ;
+  list-style: none ;
+  text-align: center ;
+}
+#navigation li {   			/* lien menu général	(blanc 16pt)*/
+  display: inline ;
+  color: #FFFFFF ;
+  font: 14px Arial ;
+  text-align: center ;
+  text-decoration: none ;
+  line-height:31px;
+}
+#navigation li a {			/* lien menu général	(blanc 14pt)*/
+  color: #FFFFFF;
+  text-decoration: none ;
+  padding: 5px 25px 5px 25px;
+}
+#navigation li a:visited {	/* lien menu général	(gris 14pt)*/
+  color : #7F7F7F;
+  text-decoration: none ;
+}
+#navigation li a:hover { 	/* lien menu général	(vert 14pt)*/
+  background: #76B720 ;
+  text-decoration: none ;
+}
+#navigation li a:active {	/* lien menu général	(blanc 14pt)*/
+  color: #FFFFFF;
+  background: #76B720 ;
+  text-decoration: none ;
+}
+.menuActif {				/* lien menu général	(blanc 14pt fond-vert)*/
+	margin: 0 ;
+	padding:  5px 25px 5px 25px ;
+	list-style: none ;
+	text-align: center ;
+	display: inline ;
+	font: 14px Arial ;
+	color : #FFFFFF;
+	background: #76B720 ;
+	text-decoration:none;
+}
+
+a.lien:link {	font: 16px Arial;		/* page lien	(anthracite 16pt)*/
+				color: #333333;
+				text-decoration:none;}
+a.lien:visited {font: 14px Arial;		/* page lien	(gris 14pt)*/
+				color : #7F7F7F;
+				text-decoration:none;}
+a.lien:hover {	font: 16px Arial;		/* page lien	(anthracite 16pt)*/
+				color : #333333;
+				text-decoration:underline;}
+
+.input {	border-style:outset;		/* contact (cadre vert ombré)*/
+			border-color:#76B720;
+			font: 12px Arial;
+			font-style: italic;} 
+   
+.bouton {	cursor:hand; 				/* contact (cadre vert & fond vert claire)*/
+			background-color:#94DAA0; 
+			border-color:#76B720;
+			font: 16px Arial;} 
+
+
+
+__________________________________/* Gestion de la gallery */____________________________________
+ 
+
+/*
+  root element for the scrollable.
+  when scrolling occurs this element stays still.
+  */
+.scrollable {
+
+    /* required settings */
+    position:relative;
+    overflow:hidden;
+    width: 550px;
+    height:120px;
+
+    /* custom decorations */
+    border:1px solid #ccc;
+    background:url("../images/fancybox/h300.png") repeat-x;
+}
+
+/*
+   root element for scrollable items. Must be absolutely positioned
+   and it should have a extremely large width to accomodate scrollable
+   items.  it's enough that you set the width and height for the root
+   element and not for this element.
+*/
+.scrollable .items {
+    /* this cannot be too large */
+    width:680px; /*20000em*/
+    position:absolute;
+    clear:both;
+}
+
+.items div {
+    float:left;
+    width:680px;
+}
+
+/* single scrollable item */
+.scrollable img {
+    float:left;
+    margin:20px 5px 20px 21px;
+    background-color:#fff;
+    padding:2px;
+    border:1px solid #ccc;
+    width:100px;
+    height:75px;
+
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+/* active item */
+.scrollable .active {
+    border:2px solid #000;
+    position:relative;
+    cursor:default;
+}
+
+--------Scrollable-buttons
+
+
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+    float:left;
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+    background:url("../images/fancybox/hori_large.png") no-repeat;
+    display:block;
+    width:30px;
+    height:30px;
+    float:left;
+    margin:40px 10px;
+    cursor:pointer;
+    font-size:1px;
+}
+
+/* right */
+a.right { background-position: 0 -30px; clear:right; margin-right: 0px;}
+a.right:hover { background-position:-30px -30px; }
+a.right:active { background-position:-60px -30px; }
+
+
+/* left */
+a.left { margin-left: 0px; }
+a.left:hover  { background-position:-30px 0; }
+a.left:active { background-position:-60px 0; }
+
+/* up and down */
+a.up, a.down  {
+    background:url("../images/fancybox/vert_large.png") no-repeat;
+    float: none;
+    margin: 10px 50px;
+}
+
+/* up */
+a.up:hover { background-position:-30px 0; }
+a.up:active { background-position:-60px 0; }
+
+/* down */
+a.down { background-position: 0 -30px; }
+a.down:hover { background-position:-30px -30px; }
+a.down:active { background-position:-60px -30px; }
+
+
+/* disabled navigational button */
+a.disabled {
+    visibility:hidden !important;
+}
+
+  /* styling for the image wrapper  */
+#image_wrap {
+    /* dimensions */
+    width:600px;
+    padding:15px 0;
+ 
+    /* centered */
+    text-align:center;
+    margin-left:auto;
+	margin-right:auto;
+ 
+    /* some "skinning" */
+    background-color:#efefef;
+    border:2px solid #fff;
+    outline:1px solid #ddd;
+    -moz-ouline-radius:4px;
+}
+
+
+__________________________________/* Gestion du popup */____________________________________
+
+
+.box {
+	background: #a6483e;
+	border: 3px solid #e1e1e1;
+	width: 335px;
+	padding: 10px;
+	text-align: center;
+	margin: 25px auto 0 auto;
+	-webkit-box-shadow: 0px 1px 3px 0px gray;
+	box-shadow: 0px 1px 3px 0px gray;
+}
+
+.box a {
+	font-size: 16px;
+	color: #fff;
+}
+
+.box a:hover {
+	color: #000;
+}
+
+.partenaire {
+	width: 300px;
+	height:250px;
+	text-align: right;
+	position: fixed;
+	top: 200px;
+	left: -350px;
+	z-index: 99999;
+	background: url(../images/popup/popup_bck.png);
+}
+
+.popup_nonmerci {
+	margin-right:10px;
+	
+}

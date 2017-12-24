@@ -1,0 +1,151 @@
+html, body, div, ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    color: #262626;
+	background: #f4f4f4;
+	font: normal 12px/18px Verdana, sans-serif;
+}
+
+#content {
+	width: 600px;
+	margin: 40px auto 0 auto;
+	padding: 0 60px 30px 60px;
+	border: solid 1px #cbcbcb;
+	background: #fafafa;
+	-moz-box-shadow: 0px 0px 10px #cbcbcb;
+	-webkit-box-shadow: 0px 0px 10px #cbcbcb;
+}
+
+h1 {
+	margin: 30px 0 15px 0;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+h1 span {
+	font-size: 50%;
+	letter-spacing: -0.05em;
+}
+
+hr {
+	border: none;
+	height: 1px; line-height: 1px;
+	background: #E5E5E5;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 7px 0;
+}
+
+a {
+	outline: none;
+}
+
+a img {
+	border: 1px solid #BBB;
+	padding: 2px;
+	margin: 10px 20px 10px 0;
+	vertical-align: top;
+}
+
+a img.last {
+	margin-right: 0;	
+}
+
+ul {
+	margin-bottom: 24px;
+	padding-left: 30px;
+}
+------------------------
+/*Param Box immage Gachoud*/
+.gallery{
+	width:613px;
+	margin:0 -10px 8px -5px;
+	position:relative;
+}
+.gallery-holder{
+	margin:0 43px;
+	height:175px;
+	width:512px;
+	padding:5px 7px 15px 8px;
+	/* background:url(./GalleryBenj/bg-gallery.png) repeat-x;*/
+}
+.gallery-content{
+	width:512px;
+	overflow:hidden;
+	position:relative;
+}
+.gallery-content ul{
+	width:99999px;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.gallery-content ul li{
+	float:left;
+	width:256px;
+}
+.gallery-content ul a{
+	position:relative;
+	width:244px;
+	height:163px;
+	display:block;
+	padding:6px;
+	background:url(./images/GalleryBenj/bg-gallery-image.png) no-repeat;
+}
+.gallery-content ul a .img-item{
+	background:url(./images/GalleryBenj/bg-img-item.png) no-repeat;
+	position:absolute;
+	width:40px;
+	height:31px;
+	top:6px;
+	left:6px;
+}
+.gallery-content ul a:hover .img-item{background-position:0 -31px;}
+.gallery-content ul a:hover{background-position:0 -175px;}
+.gallery-content ul a img{
+	display:block;
+	border:1px solid #d7cd5c;
+}
+.gallery a.next,
+.gallery a.prev{
+	position:absolute;
+	width:44px;
+	top:-2px;
+	height:195px;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+.gallery a.next{
+	right:5px;
+	background:url(./images/GalleryBenj/btn-gallery.png) no-repeat 0 -390px;
+}
+.gallery a.next:hover{
+	background-position:0 -585px;
+}
+.gallery a.prev{
+	left:5px;
+	background:url(./images/GalleryBenj/btn-gallery.png) no-repeat;
+}
+.gallery a.prev:hover{background-position:0 -195px;}
+.box-holder{
+	width:600px;
+	overflow:hidden;
+}
+
+
+#bg {
+	overflow: hidden;
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
